@@ -35,3 +35,15 @@ npx parcel <entrypoint-file>
 - kind of like a metadata file
 - keep tracks of all version
 - to avoid any discrepancy between version on local machine and production 
+
+### JSX
+- not html but a html like syntax
+- transpiled before it reaches JS
+- transpiled by parcel - babel
+
+### Babel
+- opensource javascript compiler
+
+### React component
+- class component - old way of writing code
+- functional component - new way of writing code
