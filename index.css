@@ -24,16 +24,16 @@
 }
 
 .res-container {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
 }
 
 .res-card {
     padding: 5px;
-    width: 200px;
+    width: 220px;
     margin: 5px;
-    align-content: center;
-    background-color:lightgrey;
+    background-color:rgb(231, 231, 231);
 }
 
 .res-card:hover {
@@ -45,3 +45,29 @@
     width: 100%;
 }
 
+.filter-btn {
+    margin: 10px;
+    cursor: pointer;
+}
+
+.schimmer-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.schimmer-card {
+    padding: 5px;
+    width: 220px;
+    height: 220px;
+    margin: 5px;
+    background-color:rgb(243, 243, 243);
+}
+
+.login-btn {
+    padding: 10px;
+}
+
+.search {
+    margin: 10px;
+}

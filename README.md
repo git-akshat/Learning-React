@@ -47,3 +47,11 @@ npx parcel <entrypoint-file>
 ### React component
 - class component - old way of writing code
 - functional component - new way of writing code
+
+### Hooks
+- state variable
+- re-renders component when state is updated which makes react superfast
+
+
+##
+page loads -> renders (whatever can be rendered) => useEffect (to load api data) => renders api data
