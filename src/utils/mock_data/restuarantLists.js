@@ -2,7 +2,7 @@ export const resData = [
   {
     info: {
       id: "575545",
-      name: "Chingchong Momo",
+      name: "Chingchong",
       cloudinaryImageId: "crncfqmsuosriqcrp9ez",
       locality: "Parasia Road",
       areaName: "Prasia Road",

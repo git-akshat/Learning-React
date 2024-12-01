@@ -1,7 +1,8 @@
 import RestaurantCard from "./RestaurantCard";
-import { resData } from "../utils/mockData";
+import { resData } from "../utils/mock_data/restuarantLists";
 import { useEffect, useState } from "react";
-import Schimmer from "./Schimmer";
+import Shimmer from "./Shimmer";
+import { Link } from "react-router";
 
 const Body = () => {
   // rest hook
@@ -12,22 +13,21 @@ const Body = () => {
 
   useEffect(() => {
     fetchData();
+
+    setRestList(resData);
+    setFilteredRest(resData);
   }, []);
 
   const fetchData = async () => {
     // const data = await fetch(
     //   "https://www.swiggy.com/dapi/restaurants/lia?lat=21.99740&lon=79.00110"
     // );
-
     // const json = await data.json();
-
     // console.log(json);
-    setRestList(resData);
-    setFilteredRest(resData);
   };
 
   if (listofRest.length === 0) {
-    return <Schimmer />;
+    return <Shimmer />;
   }
 
   //   let [listofRest] = resData;
@@ -70,7 +70,12 @@ const Body = () => {
       </div>
       <div className="res-container">
         {filteredRest.map((restaurant) => (
-          <RestaurantCard key={restaurant.info.id} resData={restaurant.info} />
+          <Link to={"/restaurant/" + restaurant.info.name}>
+            <RestaurantCard
+              key={restaurant.info.id}
+              resData={restaurant.info}
+            />
+          </Link>
         ))}
       </div>
     </div>
